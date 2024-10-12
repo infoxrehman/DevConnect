@@ -19,8 +19,8 @@ export const authConfig = {
   },
   providers: [
     GoogleProvider({
-      clientId: "70561846749-e5am97gb8htasg0s50kut1ds6qjsh30a.apps.googleusercontent.com",
-      clientSecret: "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",
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     }),
   ],
   callbacks: {

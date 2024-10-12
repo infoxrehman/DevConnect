@@ -32,10 +32,10 @@ declare global {
 let db: NeonHttpDatabase<typeof schema>;
 
 if (process.env.NODE_ENV === "production") {
-  db = drizzle(neon("postgresql://devfinderDB_owner:tCXif8dQ6PbV@ep-morning-silence-a5fmjrlo.us-east-2.aws.neon.tech/devfinderDB?sslmode=require"), { schema })
+  db = drizzle(neon(process.env.DATABASE_URL!), { schema })
 } else {
   if (!global.db) {
-    global.db = drizzle(neon("postgresql://devfinderDB_owner:tCXif8dQ6PbV@ep-morning-silence-a5fmjrlo.us-east-2.aws.neon.tech/devfinderDB?sslmode=require"), { schema });
+    global.db = drizzle(neon(process.env.DATABASE_URL!), { schema });
   }
   db = global.db;
 }
