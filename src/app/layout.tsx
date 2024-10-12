@@ -5,6 +5,7 @@ import { Providers } from "./provider";
 import { Header } from "./header";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "@/components/ui/toaster";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,9 @@ export default function RootLayout({
         <Providers>
           <Toaster />
           <NextTopLoader />
+          <Suspense fallback={null}>
           <Header />
+          </Suspense>
           <div className="container mx-auto">{children}</div>
         </Providers>
       </body>

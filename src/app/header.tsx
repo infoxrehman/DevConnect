@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useState } from "react";
 import { deleteAccountAction } from "./actions";
+import { useSearchParams } from "next/navigation";
 
 function AccountDropdown() {
   const session = useSession();
@@ -95,6 +96,13 @@ export function Header() {
   const session = useSession();
   const isLoggedIn = !!session.data;
 
+  const searchParams = useSearchParams();
+  const signInWithGoogle = async () => {
+    await signIn("google", {
+      callbackUrl: (searchParams.get("callback") as string) || undefined,
+    });
+  };
+
   return (
     <header className="bg-gray-100 py-2 dark:bg-gray-900 z-10 relative">
       <div className="container mx-auto flex justify-between items-center">
@@ -128,7 +136,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           {isLoggedIn && <AccountDropdown />}
           {!isLoggedIn && (
-            <Button onClick={() => signIn()} variant="link">
+            <Button onClick={signInWithGoogle} variant="link">
               <LogInIcon className="mr-2" /> Sign In
             </Button>
           )}
