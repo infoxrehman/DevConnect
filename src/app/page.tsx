@@ -6,13 +6,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-export default function LandingPage() {
-  const searchParams = useSearchParams();
+export default function LandingPage({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
   const signInWithGoogle = async () => {
     await signIn("google", {
-      callbackUrl: searchParams.get("callbackUrl") || undefined,
+      callbackUrl: (searchParams["callback"] as string) || undefined,
     });
   };
+
   return (
     <div className="">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -39,7 +43,7 @@ export default function LandingPage() {
             />
 
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-              Find other awesome devs to pair with online 
+              Find other awesome devs to pair with online
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">
               This platform is for sharing your screen and working with other
