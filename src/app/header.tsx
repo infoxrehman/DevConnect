@@ -94,6 +94,7 @@ function AccountDropdown() {
 
 export function Header() {
   const session = useSession();
+  console.log(session)
   const isLoggedIn = !!session.data;
 
   const searchParams = useSearchParams();
