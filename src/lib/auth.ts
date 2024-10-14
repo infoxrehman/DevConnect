@@ -17,6 +17,7 @@ export const authConfig = {
   session: {
     strategy: "jwt",
   },
+
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
@@ -52,7 +53,12 @@ export const authConfig = {
 
       return session;
     },
+
   },
+  jwt:{
+    secret:process.env.NEXTAUTH_SECRET!,
+    maxAge:1*24*60*60,
+  }
 } satisfies AuthOptions;
 
 export function getSession() {
