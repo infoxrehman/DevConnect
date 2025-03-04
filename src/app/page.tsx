@@ -1,10 +1,7 @@
 "use client";
-import { Provider } from "@radix-ui/react-toast";
-
 import { signIn } from "next-auth/react";
 import Image from "next/image";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import hack from "@/hack.jpg";
 
 export default function LandingPage({
   searchParams,
@@ -76,6 +73,277 @@ export default function LandingPage({
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           />
+        </div>
+
+        <div className="py-12 bg-white border rounded-3xl">
+          <div className="">
+            <h1 className="text-2xl font-bold tracking-tight text-black dark:text-black sm:text-5xl text-center">
+              Explore Hackathons
+            </h1>
+            <p className="mt-8 text-base leading-7 text-black dark:text-black tracking-tight sm:text-lg sm:leading-8 text-center">
+              This platform is for sharing your screen and working with other
+              random developers online so that you can work together
+            </p>
+
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 ml-12 mr-12">
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+          <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+          </div>
+          <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md b</div>g-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+            <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+            </div>
+            <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+          <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+          </div>
+          <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+            <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+            </div>
+            <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+          <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+          </div>
+          <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+            <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+            </div>
+            <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+          <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+          </div>
+          <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg p-4 border border-gray-300 flex flex-col lg:flex-row items-center lg:items-start">
+        <Image
+          className="w-full h-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+          src={hack}
+          width="200"
+          height="300"
+          alt="Card Image 1"
+        />
+        <div>
+          <h2 className="text-xl text-gray-600 font-bold">Card Title 1</h2>
+          <p className="mt-2 text-gray-600">Description for card 1.</p>
+            <div className="mt-2">
+            <span className="font-semibold text-gray-600">Theme:</span> <span className="text-red-500">Theme Name</span>
+            </div>
+            <div className="mt-2 grid grid-cols-3 gap-4">
+            <div>
+              <span className="font-regular text-gray-600">Online</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">Open</span>
+            </div>
+            <div>
+              <span className="font-regular text-gray-600">06/03/25</span>
+            </div>
+            <div className="col-span-3">
+              <button className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Apply Now
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+          </div>
         </div>
       </div>
     </div>
